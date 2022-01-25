@@ -1,0 +1,63 @@
+#question1
+string_A=("Python is a case sensitive language")
+print("part a: string length is", len(string_A))
+print("part b:",string_A[::-1])
+#part c:
+string_B=string_A[10:26]
+#part d:
+string_B.replace("a case sensitive","object oriented")
+print("part e:\nindex of substring \"a\" is",string_A.find("a"))
+print("part f:\nthe Output after removing white spaces from string_A is :",string_A.replace(" ",""))
+
+#question2
+NAME=input("Enter your name\n")
+SID=int(input("Enter your SID\n"))
+DEPARTMENT_NAME=input("Mention your department\n")
+CGPA=float(input("Enter your CGPA\n"))
+print("Hey,%s"%NAME,"Here!")
+print("My SID is ",SID)
+print('I am from %s'%DEPARTMENT_NAME,"and my cgpa is %f"%CGPA)
+
+#question3
+a=56
+b=10
+print("a: ",a&b)
+print("b: ",a|b)
+print("c: ",a^b)
+print("a and b after left by 2 bits respectively are: ",a<<2,b<<2)
+print("a after right shift by 2 bits and b after right shift by 4 units are respectively: ",a>>2,b>>4)
+
+#question4
+num_1=float(input("Enter the first number\n"))
+num_2=float(input("Enter the second number\n"))
+num_3=float(input("Enter the third number\n"))
+#input taken from user
+if (num_1>=num_2) and (num_1>=num_3):
+    largest=num_1
+elif (num_2>=num_1) and (num_2>=num_3):
+    largest=num_2
+else:
+    largest=num_3
+
+print("Out of three numbers taken the largest number is ",largest) 
+
+#question5
+string=input("Please enter a string\n")
+if 'name' in string:
+    print("YES")
+else:
+    print("NO")
+
+#question6
+side_1=int(input("enter the first side of triangle\n"))
+side_2=int(input("enter the second side of triangle\n"))
+side_3=int(input("enter the third side of triangle\n"))
+if (side_1>=side_2+side_3):
+    print("NO")
+elif (side_2>=side_1+side_3):
+    print("NO")
+elif (side_3>=side_1+side_2):
+    print("NO")
+else:
+    print("YES")
+
